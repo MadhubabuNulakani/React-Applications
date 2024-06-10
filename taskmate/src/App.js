@@ -17,7 +17,7 @@ function App() {
     <>
       <Header />
       <div className='App'>
-        {/* <AddSub /> */}
+        <AddSub />
         <List tasks={tasks} />
       </div>
       <Footer />
