@@ -5,7 +5,11 @@
   --theme-border:#d7d7d7;
   --theme-button:#0F3460;
 }
-
+html, body {
+  height: 100%; /* Ensure the body takes up the full viewport height */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
 *{
   margin: 0px;
   padding: 0px;
@@ -13,18 +17,41 @@
   font-family: 'Poppins', sans-serif;
 }
 
-button{
+/* button{
   border: 0px;
   padding: 5px;
   margin: 10px;
   color: #FFFF;
   border-radius: 5px;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   background-color: var(--theme-button);
-}
+} */
 
 a{
   text-decoration: none;
   color: #000000;
+}
+
+/* Width, height, and background color */
+::-webkit-scrollbar {
+  width: 5px;
+
+  background-color: #f0f0f0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #af1a1a;
 }

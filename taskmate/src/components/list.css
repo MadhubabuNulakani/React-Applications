@@ -1,0 +1,26 @@
+.ul {
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    width: 800px;
+    list-style: none;
+    flex-direction: column;
+    row-gap: 18px;
+    font-weight: bold;
+    max-height: 390px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px #babece, -10px -10px 20px #ffffff;
+}
+.displaylist{
+    /* min-height: 120px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px #babece, -10px -10px 20px #ffffff; */
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    border-bottom: 1px solid #070707; 
+}

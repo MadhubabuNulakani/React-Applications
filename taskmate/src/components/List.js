@@ -1,30 +1,27 @@
 import React, { useState } from 'react'
 import TaskCard from './TaskCard';
+import './list.css'
 
-const List = (props) => {
-    const [tasks, setTasks] = useState(props.tasks)
+const List = ({ tasks, setTasks }) => {
 
     const handleDelete = (id) => {
         setTasks(tasks.filter(task => task.id !== id));
     }
 
-    const style = {
-        margin: '10px',
-        borderRadius: '10px',
-        background: 'maroon',
-        color: 'white'
-    }
+
     return (
-        <div>
-            <h1 style={style}>Tasks List</h1>
-            {tasks.length >= 1 && (
-                <ul>
-                    {tasks.map(task => (
-                        <TaskCard key={task.id} task={task} handleDelete={handleDelete} />
-                    ))}
-                </ul>
-            )}
-        </div>
+        <>
+            {
+                tasks.length >= 1 && (<section className='displaylist'>
+                    <div className='title'>Tasks List</div>
+                    <ul className='ul'>
+                        {tasks.map(task => (
+                            <TaskCard key={task.id} task={task} handleDelete={handleDelete} />
+                        ))}
+                    </ul>
+                </section>)
+            }
+        </>
     )
 }
 

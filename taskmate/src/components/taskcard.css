@@ -1,0 +1,23 @@
+.li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 7px 7px 7px 25px;
+    height: 45px;
+    text-transform: uppercase;
+  }
+
+
+  .li.completed {
+    box-shadow: green 1px 2px 3px 0px;
+  }
+  
+  .li.pending {
+    box-shadow: red 1px 2px 3px 0px;
+  }
+
+  .li.inprogress {
+    box-shadow: rgb(51, 37, 238) 1px 2px 3px 0px;
+  }
+  
