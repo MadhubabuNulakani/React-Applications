@@ -1,0 +1,28 @@
+{
+    "Products":[
+        {
+            "id":10001,
+            "name":"The complete guide to backend developer",
+            "price":29,
+            "in_stock":true
+        },
+        {
+            "id":10002,
+            "name":"The complete guide to frontend developer",
+            "price":19,
+            "in_stock":false
+        },
+        {
+            "id":10003,
+            "name":"build a blockchain from scratch in go",
+            "price":49,
+            "in_stock":false
+        },
+        {
+            "id":10004,
+            "name":"basic to advance in java",
+            "price":45,
+            "in_stock":true
+        }
+    ]
+}
